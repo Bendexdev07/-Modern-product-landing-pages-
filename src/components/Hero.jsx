@@ -35,9 +35,14 @@ const currentFloatingCard=floatingCards[activeTab];
         <div className="max-w-7xl mx-auto flex-col lg:grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-center relative">
           <div className="">
             <div className="inline-flex items-center  space-x-2 px-3  sm:px-4 py-2 bg-blue-500/20 border-blue-500/20 rounded-full mb-4 sm:mb-6 animate-in slide-in-from-bottom  duration-700">
-              <Sparkles/>
-              <span>Introducing CodeFlow AI</span>
+              <Sparkles className="w-4 h-4 text-blue-400"/>
+              <span className="text-xs sm:text-sm text-blue-300">Introducing CodeFlow AI</span>
             </div>
+            <h1 className="text-5xl sm:text-3xl md-text-5xl font-semibold mb-4 sm:mb-6 animate-in slide-in-from-bottom duration700 delay-100 leading-tight">
+              <span className="bg-garadient-to-r from-white via-blue-100 to cyan-100 bg-clip-text text-transparent">Code Faster</span>
+              <span>Build Better</span>
+              <span>With CodeFlow AI</span>
+            </h1>
 
           </div>
 
@@ -64,25 +69,25 @@ const currentFloatingCard=floatingCards[activeTab];
             </div>
             <ChevronDown className="w-3 h-3 sm:w-4 sm:h-4 text-gary-400"/>
           </div>
-          <div className="p-3 sm:p-4 relative h-full">
+          <div className="p-3 sm:p-4 relative h-full flex flex-col">
             {/* file tabs*/}
         
-            <div className="flex space-x-1 sm:space-x-2 mb-3 sm:mb-4 overflow-x-auto">
+            <div className="flex space-x-1 sm:space-x-2 mb-0  overflow-x-auto ">
                 <button 
                 onClick={()=>setActiveTab("App.jsx")}
                 className={`px-3 py-2 backdrop-blur-sm text-xs rounded-t-lg border${
-                 activeTab=="App.jsx" ?" bg-blue-500/30 text-white border-blue-400/20 ":"bg-white/5 text-gray-300 border-white/10 hover:bg-white/10"}  transition-all duration-200 white-space-nowrap`} >App.jsx</button> 
+                 activeTab=="App.jsx" ?" bg-blue-500/30 text-white border-blue-400/20 ":"bg-white/5 text-gray-300 border-white/10 hover:bg-white/10"}  transition-all duration-200 whitespace-nowrap`} >App.jsx</button> 
                 <button 
                  onClick={()=>setActiveTab("Navbar.jsx")}
                 className={`px-3 py-2 backdrop-blur-sm text-xs rounded-t-lg border${
-                 activeTab=="Navbar.jsx" ?" bg-blue-500/30 text-white border-blue-400/20 ":"bg-white/5 text-gray-300 border-white/10 hover:bg-white/10"}  transition-all duration-200 white-space-nowrap`}>Navbar.jsx</button>
+                 activeTab=="Navbar.jsx" ?" bg-blue-500/30 text-white border-blue-400/20 ":"bg-white/5 text-gray-300 border-white/10 hover:bg-white/10"}  transition-all duration-200 whitespace-nowrap`}>Navbar.jsx</button>
                 <button 
                   onClick={()=>setActiveTab("Hero.jsx")}
                 className={`px-3 py-2 backdrop-blur-sm text-xs rounded-t-lg border${
-                 activeTab=="Hero.jsx" ?" bg-blue-500/30 text-white border-blue-400/20 ":"bg-white/5 text-gray-300 border-white/10 hover:bg-white/10"}  transition-all duration-200 white-space-nowrap`}>Hero.jsx</button>
+                 activeTab=="Hero.jsx" ?" bg-blue-500/30 text-white border-blue-400/20 ":"bg-white/5 text-gray-300 border-white/10 hover:bg-white/10"}  transition-all duration-200 whitespace-nowrap`}>Hero.jsx</button>
             </div>
             {/*  code content*/}
-             <div className="relative overflow-hidden flex-grow">
+             <div className="relative overflow-hidden flex-grow rounded-b-lg border border-t-0 border-blue-400/20 bg-[#011627]"> 
                 <SyntaxHighlighter language="javascript" style={nightOwl} customStyle={{margin:0,borderRadius:"8px",fontSize:"11px",lineHeight:"1.4",height:"100%",border:"1px solid #3c3c"}}>
                     {codeExamples[activeTab]}
                 </SyntaxHighlighter> 
