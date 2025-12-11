@@ -32,22 +32,22 @@ export default function Hero() {
       <div className="absolute top-20 left-4 sm:left-10 w-48 sm:w-72 h-48 sm:h-72 bg-blue-500/10 rounded-full blur-3xl animate-pulse" />
       <div className="absolute bottom-20 right-4 sm:right-10 w-64 sm:w-96 h-64 sm:h-96 bg-cyan-500/10 rounded-full blur-3xl animate-pulse delay-1000" />
       <div className="max-w-7xl mx-auto text-center relative w-full">
-        <div className="max-w-7xl mx-auto flex-col lg:grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-center relative">
+        <div className="max-w-7xl mx-auto flex-col lg:grid lg:grid-cols-2 text-center lg:text-left gap-6 sm:gap-8 lg:gap-12 items-center relative">
           <div >
             <div className="inline-flex items-center space-x-2 px-3 sm:px-4 py-2 bg-blue-500/10 border border-blue-500/20 rounded-full mb-4 sm:mb-6 animate-in slide-in-from-bottom duration-700">
               <Sparkles className="w-4 h-4 text-blue-400 text-center" />
-              <span className="text-xs sm:text-sm text-blue-300 text-center">
+              <span className="text-xs sm:text-sm text-blue-300 ">
                 Introducing CodeFlow AI
               </span>
             </div>
-            <h1 className="text-5xl sm:text-3xl md-text-5xl font-semibold mb-4 sm:mb-6 animate-in slide-in-from-bottom duration700 delay-100 leading-tight">
-              <span className="bg-gradient-to-r from-white via-blue-100 to-cyan-100 bg-clip-text text-transparent block mb-1 sm:mb-2 text-center">
+            <h1 className="text-5xl xl:text-6xl sm:text-3xl md-text-5xl font-semibold mb-4 sm:mb-6 animate-in slide-in-from-bottom duration700 delay-100 leading-tight">
+              <span className="bg-gradient-to-r from-white via-blue-100 to-cyan-100 bg-clip-text text-transparent block mb-1 sm:mb-2 ">
                 Code Faster
               </span>
-              <span className="bg-gradient-to-b from-blue-400 via-cyan-400 to-blue-400 bg-clip-text text-transparent block mb-1 sm:mb-2 text-center">
+              <span className="bg-gradient-to-b from-blue-400 via-cyan-400 to-blue-400 bg-clip-text text-transparent block mb-1 sm:mb-2 ">
                 Build Better
               </span>
-              <span className="bg-gradient-to-r from-white via-blue-100 to-cyan-100 bg-clip-text text-transparent block mb-1 sm:mb-2 text-center">
+              <span className="bg-gradient-to-r from-white via-blue-100 to-cyan-100 bg-clip-text text-transparent block mb-1 sm:mb-2 ">
                 With CodeFlow AI
               </span>
             </h1>
@@ -61,9 +61,9 @@ export default function Hero() {
                 <span>Start Coding Free</span>
                 <ArrowRight className="w-4 h-4 sm:w-5 group-hover:translate-x-1 transition-transform duration-300"/>
                 </button>
-                <button type="button">
-                <div>
-                  <Play/>
+                <button  className="group w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-white/5 backdrop-blur-sm border-white/10 rounded-lg font-smibold text-sm sm:text-base transition-all duration-300 hover:bg-white/10 flex items-center justify-center space-x-2">
+                <div className="p-2 bg-white/10 rounded-full group-hover:bg-white/20 duration-300 tranisition-colors">
+                  <Play className="w-4 h-4 sm:w-5 group-hover:translate-x-1 transition-transform duration-300 fill-white"/>
                   
                   </div>
                   <span>
