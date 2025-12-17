@@ -25,3 +25,10 @@ A sleek, responsive, and performant landing page template built with **React** a
    ```bash
    git clone https://github.com/your-username/Modern-product-landing-pages.git
    cd Modern-product-landing-pages
+  2. Install dependencies:
+   ```bash
+    npm install
+
+   3.run the dev server
+   ```bash
+    npm run dev
